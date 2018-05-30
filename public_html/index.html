@@ -18,23 +18,33 @@
     <!-- CSS frameworks -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
+    <!-- Miscellaneous -->
+    <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+
 </head>
-<body>
+<body id="particles-js">
     <div class="loader"></div>
 
-    <section id="intro">
-            <div id="particles-js">
-                <div class="text-wrapper">
-                    <h1>Welcome</h1>
-                    <h3>This is Reins site</h3>
-                </div>
-            </div>
-    </section>
+    <div id="intro">
+        <div class="text-wrapper">
+            <h1>Welcome</h1>
+            <h3>This is Reins site</h3>
+        </div>
+    </div>
 
-    <section id="about">
-        <h3>About</h3>
-        <p>I am Rein Fernhout, a 15 year old programmer. There would be more text here but I have a french test to study</p>
-    </section>
+    <div id="page">
+        <div id="left">
+                <h3>About</h3>
+                <p>I am Rein Fernhout, a 15 year old programmer. And I really don't know what to write here tbh</p>
+        </div>
+        <div id="right">
+            <div class="github-widget" data-username="Gamerein"></div>
+        </div>
+        
+        <div id="footer">
+
+        </div>
+    </div>
 
     <!-- Local JavaScript -->
     <script src="js/particles.js"></script>
