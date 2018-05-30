@@ -7,7 +7,7 @@ html,body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* background-color: rgb(80,80,80) */
+    background-color: rgb(80,80,80)
 }
 
 .loader {
@@ -21,25 +21,44 @@ html,body {
 }
 
 .particles-js-canvas-el {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
-}
-
-/* Sections */
-
-section {
     height: 100%;
-    padding: 2px 3%;
-    /* margin: 0px 3%; */
+    z-index: 1;
+}
+.github-widget {
+    position: absolute;
+    right: 6%;
+    float: right;
 }
 
-section#intro {
+div#intro {
     background-color: rgb(80,80,80);
+    height: 100%;
+    margin: 0px;
 }
 
-section#about {
+div#page {
     background-color: #fff;
+    margin: 0px 3%;
+    padding: 30px 3%;
+    height: 750px;
+    z-index: 2;
+}
+
+#page #footer {
+    /* border-top: 1px solid rgb(200,200,200); */
+    height: 50px;
+
+}
+
+#page #left, #page #right {
+    width: 50%;
+}
+
+#page #left {
+    float: left;
 }
 
 /* Text */
@@ -59,8 +78,13 @@ section#about {
     text-shadow: 2px 2px #000;
 }
 
-#about h3 {
+#page p {
+    max-width: 80%;
+}
 
+#page h3 {
+    display: inline;
+    border-bottom: 1px solid rgb(200,200,200);
 }
 
 /* Things to fiddle with */
