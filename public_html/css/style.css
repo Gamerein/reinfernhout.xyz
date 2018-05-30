@@ -25,11 +25,11 @@ html,body {
     top: 0px;
     left: 0px;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
 }
 .github-widget {
     position: absolute;
-    right: 6%;
+    right: 3%;
     float: right;
 }
 
@@ -44,7 +44,8 @@ div#page {
     margin: 0px 3%;
     padding: 30px 3%;
     height: 750px;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
 }
 
 #page #footer {
