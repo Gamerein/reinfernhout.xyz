@@ -41,17 +41,17 @@ div#intro {
 
 div#page {
     background-color: #fff;
-    margin: 0px 3%;
+    margin: 0px 3% 20px 3%;
     padding: 30px 3%;
     height: 750px;
     position: relative;
     z-index: 1;
+    border-radius: 10px;
 }
 
 #page #footer {
     /* border-top: 1px solid rgb(200,200,200); */
     height: 50px;
-
 }
 
 #page #left, #page #right {
@@ -61,6 +61,51 @@ div#page {
 #page #left {
     float: left;
 }
+
+.levitate {
+    animation: levitate 1.5s linear infinite alternate;
+}
+
+.levitate-margin {
+    animation: levitate-margin 1.5s linear infinite alternate;
+}
+
+#intro .arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    border-color: white;
+}
+
+/* Arrows */
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-width: 0 3px 3px 0;
+    margin: 5px;
+}
+
+.arrow.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 
 /* Text */
 #intro h1 {
@@ -86,6 +131,31 @@ div#page {
 #page h3 {
     display: inline;
     border-bottom: 1px solid rgb(200,200,200);
+}
+
+/* Animations */
+
+@keyframes levitate {
+    from { 
+        -ms-transform: translate(0, 0); /* IE 9 */
+        -webkit-transform: translate(0, 0); /* Safari */
+        transform: translate(0, 0);
+    }
+    to {
+        -ms-transform: translate(0, 10px); /* IE 9 */
+        -webkit-transform: translate(0, 10px); /* Safari */
+        transform: translate(0, 10px);
+    }
+}
+
+/* For when using transform is no option */
+@keyframes levitate-margin {
+    from { 
+        margin-bottom: 0px;
+    }
+    to {
+        margin-bottom: 10px;
+    }
 }
 
 /* Things to fiddle with */
