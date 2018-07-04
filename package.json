@@ -1,0 +1,23 @@
+{
+  "name": "reinfernhout.xyz",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamerein/reinfernhout.xyz.git"
+  },
+  "keywords": [],
+  "author": "LevitatingBusinessMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gamerein/reinfernhout.xyz/issues"
+  },
+  "homepage": "https://github.com/Gamerein/reinfernhout.xyz#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
