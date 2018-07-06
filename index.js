@@ -1,6 +1,8 @@
-const express = require('express');
-const config = require('./config/config.js')
-const app = express();
+const express = require('express'),
+config = require('./config/config.js'),
+path = require('path'),
+app = express();
 
-app.use(express.static('./public'));
+
+app.use(express.static(path.join(__dirname,'./public')));
 app.listen(config.port);
